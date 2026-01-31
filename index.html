@@ -6,22 +6,116 @@
 -->
 <html>
 	<head>
-		<title>Home | Nil Uzunoglu </title>
+		<title>Aleyna Nil Uzunoğlu | Space Software & AI Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Software Engineer specializing in mission-critical space systems, AI/ML pipelines, and backend development. Currently at Turkish Aerospace." />
+		<meta name="keywords" content="Software Engineer, Space Systems, AI, Machine Learning, Satellite Software, Turkish Aerospace, ECSS, CCSDS" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style>
 			.mainContainer {
-			width: 100%;
-			overflow: hidden;
+				width: 100%;
+				overflow: hidden;
 			}
 
 			.column {
-			float: left;
-			width: 50%;
-}
+				float: left;
+				width: 50%;
+			}
+
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 1.5rem;
+				margin: 1.5rem 0;
+			}
+
+			.skill-card {
+				background: rgba(255, 255, 255, 0.03);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				border-radius: 8px;
+				padding: 1.2rem;
+			}
+
+			.skill-card h4 {
+				margin-bottom: 0.5rem;
+				color: #4acaa8;
+				font-size: 0.95rem;
+			}
+
+			.skill-card p {
+				font-size: 0.85rem;
+				color: #aaa;
+				margin: 0;
+			}
+
+			.project-card {
+				background: rgba(255, 255, 255, 0.02);
+				border-left: 3px solid #4acaa8;
+				padding: 1rem 1.2rem;
+				margin-bottom: 1.2rem;
+				border-radius: 0 8px 8px 0;
+			}
+
+			.project-card h4 {
+				margin-bottom: 0.3rem;
+				font-size: 1rem;
+			}
+
+			.project-card .meta {
+				font-size: 0.8rem;
+				color: #888;
+				margin-bottom: 0.5rem;
+			}
+
+			.project-card p {
+				font-size: 0.9rem;
+				margin: 0;
+			}
+
+			.timeline-item {
+				border-left: 2px solid #4acaa8;
+				padding-left: 1.2rem;
+				margin-bottom: 1.5rem;
+				position: relative;
+			}
+
+			.timeline-item::before {
+				content: '';
+				width: 10px;
+				height: 10px;
+				background: #4acaa8;
+				border-radius: 50%;
+				position: absolute;
+				left: -6px;
+				top: 0.3rem;
+			}
+
+			.timeline-item h4 {
+				margin-bottom: 0.2rem;
+			}
+
+			.timeline-item .period {
+				font-size: 0.8rem;
+				color: #888;
+				margin-bottom: 0.5rem;
+			}
+
+			.highlight-text {
+				color: #4acaa8;
+			}
+
+			.tag {
+				display: inline-block;
+				background: rgba(74, 202, 168, 0.15);
+				color: #4acaa8;
+				padding: 0.2rem 0.6rem;
+				border-radius: 4px;
+				font-size: 0.75rem;
+				margin: 0.2rem;
+			}
 		</style>
 
 	</head>
@@ -33,231 +127,349 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#about" class="icon fa-light fa-address-card"><span>About Me</span></a>						
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>						
+						<a href="#about" class="icon fa-light fa-address-card"><span>About</span></a>
+						<a href="#skills" class="icon solid fa-code"><span>Skills</span></a>
+						<a href="#projects" class="icon solid fa-rocket"><span>Projects</span></a>
+						<a href="#experience" class="icon solid fa-briefcase"><span>Experience</span></a>
 						<a href="https://www.linkedin.com/in/niluzunoglu/" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
 						<a href="https://github.com/niluzunoglu" class="icon brands fa-github"><span>Github</span></a>
 						<a href="https://medium.com/@aleynaniluzunoglu" class="icon brands fa-medium"><span>Medium</span></a>
-						<a href="https://twitter.com/nilderland" class="icon brands fa-twitter"><span>Twitter</span></a>
-						<a href="#aviation" class="icon solid fa-plane"><span>Aviation</span></a>
-						<a href="#blog" class="icon solid fa-blog"><span>Blog</span></a>						
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
+
 					<!-- Home Section -->
 						<article id="home" class="panel intro" style="padding: 2rem 1rem; text-align: center;">
 
 							<header style="max-width: 700px; margin: 0 auto;">
-								<h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Aleyna Nil Uzunoğlu</h1>
-								<p style="font-size: 1.05rem; margin-bottom: 0.5rem; color: #666;">
-									Software Engineer at Turkish Aerospace
+								<h1 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Aleyna Nil Uzunoğlu</h1>
+								<p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #4acaa8; font-weight: 500;">
+									Satellite Software Design Engineer
 								</p>
-								<p style="font-size: 1rem; margin-bottom: 0.5rem; color: #666;">
-									Backend Development • Artificial Intelligence • Aerospace Systems
+								<p style="font-size: 1rem; margin-bottom: 0.8rem; color: #ccc;">
+									Mission-Critical Systems · AI/ML · Ground Segment Software
 								</p>
-								<p style="font-size: 0.95rem; margin-bottom: 1rem; color: #777;">
-									Currently pursuing a thesis-based Master’s degree in Computer Engineering at Yıldız Technical University.
+								<p style="font-size: 0.9rem; margin-bottom: 0.8rem; color: #999; line-height: 1.6;">
+									Building reliable software for spacecraft operations at <strong style="color: #fff;">Turkish Aerospace</strong>. 
+									<br>Pursuing M.Sc. in Computer Engineering with focus on Deep Learning.
 								</p>
-								<p style="font-size: 0.9rem; color: #888; margin-bottom: 1.2rem;">
-									<i class="fas fa-map-marker-alt"></i> Ankara, Turkey
+								<p style="font-size: 0.85rem; color: #777; margin-bottom: 1.2rem;">
+									<i class="fas fa-map-marker-alt"></i> Ankara, Türkiye
 								</p>
 
-								<!-- Smaller Contact Button -->
-								<div>
-									<a href="#contact" class="button icon solid fa-envelope" style="font-size: 0.85rem; padding: 0.4em 1.2em;">
+								<!-- CTA Buttons -->
+								<div style="margin-top: 1rem;">
+									<a href="#projects" class="button" style="font-size: 0.85rem; padding: 0.5em 1.4em; margin: 0.3rem;">
+										View Projects
+									</a>
+									<a href="#contact" class="button icon solid fa-envelope" style="font-size: 0.85rem; padding: 0.5em 1.4em; margin: 0.3rem;">
 										Contact Me
 									</a>
 								</div>
 							</header>
 
-						<!-- Enlarged Profile Image with CTA underneath -->
-						<div style="margin: 0.2rem;">
-							<!-- CTA below image -->
-							<a href="#about" style="text-decoration: none; display: inline-block; margin-top: 1rem;">
-								<img src="images/me.png" alt="Profile picture"
-								style="max-width: 340px; width: 100%; height: auto; border-radius: 10px; display: block; margin: 0 auto;" />	
-							</a>
-						</div>
-
+							<!-- Profile Image -->
+							<div style="margin: 1.5rem auto;">
+								<a href="#about" style="text-decoration: none; display: inline-block;">
+									<img src="images/me.png" alt="Aleyna Nil Uzunoğlu"
+									style="max-width: 320px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto; border: 2px solid rgba(74, 202, 168, 0.3);" />
+								</a>
+							</div>
 
 						</article>
 
 						<!-- About Me -->
-							<article id="about" class="panel">
+						<article id="about" class="panel">
 
-								<header>
-									<h2>About Me</h2>
-								</header>
+							<header>
+								<h2>About Me</h2>
+							</header>
 
-								<!-- CEERS Image -->
-								<div style="text-align: center; margin-bottom: 1.5rem;">
-									<img src="images/CEERSCrop.png" alt="JWST CEERS Deep Field"
-										style="max-width: 100%;
-											height: auto;
-											border: 1px solid rgba(200, 200, 200, 0.6);
-											border-radius: 8px;
-											box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-											padding: 4px;
-											background-color: white;" />
+							<!-- JWST Image -->
+							<div style="text-align: center; margin-bottom: 1.5rem;">
+								<img src="images/CEERSCrop.png" alt="JWST CEERS Deep Field"
+									style="max-width: 100%;
+										height: auto;
+										border: 1px solid rgba(200, 200, 200, 0.15);
+										border-radius: 8px;
+										box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);" />
+								<figcaption style="font-size: 0.75rem; color: #666; margin-top: 0.5rem;">
+									CEERS Deep Field — JWST | <a href="https://webbtelescope.org/contents/media/images/2024/134/01J5E841G3BC9FPQ90TNBVMEWG" target="_blank" style="color: #4acaa8;">webbtelescope.org</a>
+								</figcaption>
+							</div>
 
-									<figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">
-										Image: CEERS Deep Field by JWST – Source: <a href="https://webbtelescope.org/contents/media/images/2024/134/01J5E841G3BC9FPQ90TNBVMEWG" target="_blank">webbtelescope.org</a>
-									</figcaption>
+							<p style="font-size: 0.95rem; line-height: 1.7;">
+								I'm a <strong class="highlight-text">Software Design Engineer</strong> with 4.5+ years of experience building mission-critical systems. My work sits at the intersection of <strong>aerospace software</strong>, <strong>artificial intelligence</strong>, and <strong>reliable backend systems</strong>.
+							</p>
+
+							<p style="font-size: 0.95rem; line-height: 1.7;">
+								At <strong>Turkish Aerospace</strong>, I architect software for satellite ground segments — from telemetry processing to spacecraft command systems, all built under rigorous ECSS standards and CCSDS protocols. I've contributed to multiple satellite programs, including microsatellite initiatives.
+							</p>
+
+							<p style="font-size: 0.95rem; line-height: 1.7;">
+								Currently pursuing my <strong>M.Sc. in Computer Engineering</strong> at Yıldız Technical University, where my thesis focuses on <strong>deep learning for exoplanet detection</strong> using Kepler/TESS mission data. My research combines signal processing, neural networks, and scientific computing.
+							</p>
+
+							<p style="font-size: 0.95rem; line-height: 1.7;">
+								Beyond code, I'm fascinated by the cosmos — from analyzing light curves of distant stars to tracking F-16s at airshows. This curiosity drives everything I build.
+							</p>
+
+							<div style="margin-top: 1.5rem; padding: 1rem; background: rgba(74, 202, 168, 0.08); border-radius: 8px;">
+								<p style="font-size: 0.9rem; margin: 0; color: #ccc;">
+									<strong style="color: #4acaa8;">Currently exploring:</strong> AI-driven space data analysis, transformer architectures for remote sensing, and the future of autonomous spacecraft systems.
+								</p>
+							</div>
+
+						</article>
+
+						<!-- Skills -->
+						<article id="skills" class="panel">
+
+							<header>
+								<h2>Technical Skills</h2>
+							</header>
+
+							<div class="skills-grid">
+
+								<div class="skill-card">
+									<h4>🛰️ Space Systems</h4>
+									<p>ECSS-compliant development, CCSDS protocols, Telemetry & Telecommand systems, Ground segment automation, Mission operations software</p>
 								</div>
 
-								<p>
-									I'm a software engineer with a strong focus on backend development and artificial intelligence systems. My work sits at the intersection of code, data, and curiosity — particularly where complex systems meet real-world impact.
-									<br><br>
-									I completed my Bachelor's degree in Computer Engineering at Ankara University in June 2022. Currently, I’m pursuing a thesis-based Master’s degree in Computer Engineering at Yıldız Technical University. My graduate studies have included advanced coursework in machine learning, deep learning, natural language processing, and modern software architectures.
-									<br><br>
-									Beyond my academic and professional pursuits, I’m deeply fascinated by space technologies and intelligent systems designed for aerospace applications. This interest continues to inspire both my career path and the projects I choose to undertake.
-									<br><br>
-									This website is a reflection of my journey — a place where I share selected projects, ideas I’ve explored, and the occasional deep-dive into topics that excite me.
-									<br><br>
-									Feel free to reach out if you’d like to collaborate, discuss an idea, or just talk about building smart systems — on Earth or beyond.								
-								</p>
-
-							</article>
-
-						<!-- Work -->
-							<article id="work" class="panel">
-
-								<header>
-									<h2>Work</h2>
-								</header>
-
-								<p>
-
-									I am currently working as a Software Engineer at Turkish Aerospace, where I focus on developing robust and scalable software systems for aerospace applications. Over the past two years, I’ve been contributing to various projects involving high-performance computing, complex data processing, and system integration.
-									<br><br>
-									Previously, I worked as a backend developer at KutuAI, where I primarily used Python and the Django framework to build web-based solutions.
-									<br><br>
-									I also gained valuable experience as an intern and junior software engineer at Sparta, a cybersecurity company, where I worked on web applications and web application security.
-									<br><br>
-									I’m always eager to explore new technologies, take on challenging problems, and build efficient systems that can make a real impact.
-									<br>
-								</p>
-
-								<header>
-									<h3>Projects</h3>
-								</header>
-
-								<div class="mainContainer"> 
-
-									<div class="column"> 
-										<p>
-											I'm proud to have been a part of a team that made a real-world impact through our project on "Sepsis Detection and Treatment using Machine Learning." 
-											Our project was the first of its kind in Turkey and aimed to improve the detection and treatment of sepsis using machine learning. 
-											Thanks to our efforts, we were able to shed light on the importance of early diagnosis and timely intervention in treating this life-threatening condition.
-											I'm grateful to have had the opportunity to work with my team on this challenging project and to contribute to improving healthcare in Turkey. 
-											This project reinforced my belief in the power of technology and data analysis to make a positive impact in people's lives. I look forward to continuing to explore the potential of machine learning and artificial intelligence in healthcare and other fields.	
-										</p>
-									</div>
-
-									<div class="column">
-										<div class="col-6 col-6-medium col-12-small m-2 p-2">
-											<a href="#" class="image fit"><img src="images/poster.PNG" alt=""></a>
-											<figcaption>Project Poster</figcaption>
-										</div>
-									</div>
-
+								<div class="skill-card">
+									<h4>⚙️ Backend Development</h4>
+									<p>Java 21, Python, Spring Boot, FastAPI, REST API design, Microservices architecture, PostgreSQL, MongoDB</p>
 								</div>
 
-							</article>
+								<div class="skill-card">
+									<h4>🤖 AI & Machine Learning</h4>
+									<p>Deep Learning (CNNs, Vision Transformers), PyTorch, TensorFlow, Time-series analysis, Signal processing, Feature engineering</p>
+								</div>
 
-						<!-- Blog -->
-							<article id="blog" class="panel">
-								<header>
-									<h2>Blog</h2>
-								</header>
-								
-								<p>In progress .. </p>
-							</article>
+								<div class="skill-card">
+									<h4>🔧 Tools & Practices</h4>
+									<p>Git, CI/CD pipelines, Docker basics, Linux, Object-oriented design, Design patterns, Technical documentation</p>
+								</div>
 
-						<!-- Aviation -->
+							</div>
 
-							<article id="aviation" class="panel">
-								<header>
-									<h2>Aviation</h2>
-								</header>
+							<div style="margin-top: 1.5rem;">
+								<h3 style="font-size: 1rem; margin-bottom: 0.8rem;">Core Technologies</h3>
+								<div>
+									<span class="tag">Java 21</span>
+									<span class="tag">Python</span>
+									<span class="tag">React</span>
+									<span class="tag">PostgreSQL</span>
+									<span class="tag">PyTorch</span>
+									<span class="tag">TensorFlow</span>
+									<span class="tag">Git</span>
+									<span class="tag">REST APIs</span>
+									<span class="tag">CCSDS</span>
+									<span class="tag">ECSS</span>
+								</div>
+							</div>
 
-								<section>
-									<div class="row">
+						</article>
 
-										<div class="col-6 col-12-medium col-6-small">
-											<a href="#" class="image fit"><img src="images/soloturk.PNG" alt=""></a>
-										</div>
+						<!-- Projects -->
+						<article id="projects" class="panel">
 
-										<div class="col-6 col-12-medium col-6-small">
-											<p>
-												Outside of my work as a software engineer, I have a deep passion for military aviation. In my spare time, I enjoy aircraft spotting — observing, identifying, and learning about various types of military jets.
+							<header>
+								<h2>Featured Projects</h2>
+							</header>
 
-												The F-16 is my favorite aircraft, and I’m an avid follower of Solotürk, Turkey’s renowned F-16 demonstration team.
+							<p style="font-size: 0.9rem; color: #999; margin-bottom: 1.5rem;">
+								A selection of research and engineering projects spanning space science, AI, and healthcare.
+							</p>
 
-												This hobby keeps my curiosity alive and continually inspires me to think creatively, often influencing how I approach complex problems in software engineering.
+							<div class="project-card">
+								<h4>🌌 TraceNet — Exoplanet Detection Pipeline</h4>
+								<div class="meta">M.Sc. Thesis | Yıldız Technical University | 2024 – Present</div>
+								<p>
+									Developing a deep learning pipeline to detect planetary transits in Kepler/TESS light curves. 
+									The system combines automated preprocessing, feature extraction (PCA, LDA, SHAP), and CNN-based classification 
+									to identify exoplanet candidates from stellar brightness data.
+								</p>
+								<div style="margin-top: 0.5rem;">
+									<span class="tag">Deep Learning</span>
+									<span class="tag">CNNs</span>
+									<span class="tag">Signal Processing</span>
+									<span class="tag">Astronomy</span>
+								</div>
+							</div>
 
-											</p>
-										</div>
+							<div class="project-card">
+								<h4>📡 DeepSETI — Artificial vs. Natural Signal Classification</h4>
+								<div class="meta">Research Project | 2024 – Present</div>
+								<p>
+									Building ML models to distinguish technological (artificial) signals from natural astrophysical sources. 
+									Exploring advanced signal processing and anomaly detection techniques in the context of 
+									Search for Extraterrestrial Intelligence (SETI).
+								</p>
+								<div style="margin-top: 0.5rem;">
+									<span class="tag">Machine Learning</span>
+									<span class="tag">Signal Processing</span>
+									<span class="tag">Anomaly Detection</span>
+								</div>
+							</div>
 
-									</div>
+							<div class="project-card">
+								<h4>🧊 SentinelGlacierNet — Glacier Front Detection in SAR Imagery</h4>
+								<div class="meta">Remote Sensing Course | YTU | 2024</div>
+								<p>
+									Implemented and benchmarked state-of-the-art segmentation architectures (U-Net, DeepLabV3+, TransUNet, Swin-UNet, SAM) 
+									for automatic glacier front detection from Sentinel-1 radar imagery. Achieved significant improvements in IoU and F1-score metrics.
+								</p>
+								<div style="margin-top: 0.5rem;">
+									<span class="tag">Computer Vision</span>
+									<span class="tag">Transformers</span>
+									<span class="tag">SAR</span>
+									<span class="tag">Climate Science</span>
+								</div>
+							</div>
 
-									<div>
-										<ul class="copyright">
-											Photo by <a href="">Soloturk Official Instagram Account</a>
-										</ul>
-									</div>
-								</section>
-								
-							</article> 
+							<div class="project-card">
+								<h4>🚀 SkySail — CubeSat Development Program</h4>
+								<div class="meta">Turkish Aerospace | 2023</div>
+								<p>
+									Contributed to structures, analysis, and avionics workstreams for a CubeSat-class spacecraft. 
+									Supported subsystem integration across mechanical, electronics, and software domains throughout 
+									the full development lifecycle.
+								</p>
+								<div style="margin-top: 0.5rem;">
+									<span class="tag">CubeSat</span>
+									<span class="tag">Systems Engineering</span>
+									<span class="tag">Aerospace</span>
+								</div>
+							</div>
+
+							<div class="project-card">
+								<h4>🏥 CureAI — Sepsis Detection with Machine Learning</h4>
+								<div class="meta">Graduation Project | Ankara University | 2022 | <span style="color: #4acaa8;">🏆 2nd Place</span></div>
+								<p>
+									Developed an ML-based decision support system for early sepsis detection, processing 46,520 patient records 
+									from the MIMIC dataset. Achieved 86.7% accuracy distinguishing sepsis from 780 other conditions. 
+									Awarded 2nd place at "Genç Beyinler Yeni Fikirler" and supported by TÜBİTAK BİDEB 2209-A grant.
+								</p>
+								<div style="margin-top: 0.5rem;">
+									<span class="tag">Healthcare AI</span>
+									<span class="tag">Classification</span>
+									<span class="tag">Feature Engineering</span>
+								</div>
+							</div>
+
+						</article>
+
+						<!-- Experience -->
+						<article id="experience" class="panel">
+
+							<header>
+								<h2>Experience</h2>
+							</header>
+
+							<div class="timeline-item">
+								<h4>Satellite Software Design Engineer</h4>
+								<div class="period">Turkish Aerospace (TUSAŞ) · Ankara · 07/2023 – Present</div>
+								<p style="font-size: 0.9rem;">
+									Architecting mission-critical software for satellite ground segments. Developing CCSDS-compliant 
+									telemetry/telecommand modules, designing robust spacecraft-to-ground communication systems, 
+									and driving end-to-end development under ECSS standards. Contributing to multiple satellite programs 
+									including microsatellite initiatives.
+								</p>
+							</div>
+
+							<div class="timeline-item">
+								<h4>Software Developer</h4>
+								<div class="period">KutuAI · Ankara · 09/2022 – 07/2023</div>
+								<p style="font-size: 0.9rem;">
+									Built REST API integrations and backend data processing services for customer feedback platforms. 
+									Developed scalable solutions using Python and modern web frameworks.
+								</p>
+							</div>
+
+							<div class="timeline-item">
+								<h4>Software Developer</h4>
+								<div class="period">Sparta Cyber Security · Ankara · 06/2021 – 09/2022</div>
+								<p style="font-size: 0.9rem;">
+									Developed web applications with security-first approach. Built 3 automation tools for security reporting 
+									and gained hands-on experience in information security practices.
+								</p>
+							</div>
+
+							<header style="margin-top: 2rem;">
+								<h3>Education</h3>
+							</header>
+
+							<div class="timeline-item">
+								<h4>M.Sc. Computer Engineering (Thesis)</h4>
+								<div class="period">Yıldız Technical University · İstanbul · 2024 – Present · GPA: 3.82/4.00</div>
+								<p style="font-size: 0.9rem;">
+									Thesis: Deep learning for exoplanet detection from Kepler/TESS light curves. 
+									Focus areas: Machine learning, deep learning, NLP, signal processing.
+								</p>
+							</div>
+
+							<div class="timeline-item">
+								<h4>B.Sc. Computer Engineering</h4>
+								<div class="period">Ankara University · Ankara · 2018 – 2022 · GPA: 3.57/4.00</div>
+								<p style="font-size: 0.9rem;">
+									Graduated with honors. Senior project on sepsis detection awarded 2nd place nationally.
+								</p>
+							</div>
+
+						</article>
 
 						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Get in Touch</h2>
-								</header>
+						<article id="contact" class="panel">
+							<header>
+								<h2>Get in Touch</h2>
+							</header>
 
+							<p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+								Interested in collaborating on space systems, AI research, or challenging engineering problems? 
+								I'm always open to meaningful conversations and new opportunities.
+							</p>
+
+							<div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(74, 202, 168, 0.08); border-radius: 8px;">
+								<p style="font-size: 0.9rem; margin: 0;">
+									📧 <a href="mailto:aleynaniluzunoglu@gmail.com" style="color: #4acaa8;">aleynaniluzunoglu@gmail.com</a><br>
+									💼 <a href="https://www.linkedin.com/in/niluzunoglu/" style="color: #4acaa8;">linkedin.com/in/niluzunoglu</a><br>
+									🐙 <a href="https://github.com/niluzunoglu" style="color: #4acaa8;">github.com/niluzunoglu</a>
+								</p>
+							</div>
+							
+							<form action="https://formspree.io/f/xdovdjja" method="post">
 								<div>
-									<p>
-									Whether you have a question, a project in mind, or simply want to exchange ideas, I’d be happy to connect.
-									<br>You can reach me through the contact form below, send an email to <b><a href="mailto:aleynaniluzunoglu@gmail.com"> aleynaniluzunoglu@gmail.com</a></b> or find me on <b><a href="www.linkedin.com/in/niluzunoglu/">LinkedIn</a></b>. 
-									<br>I value meaningful conversations and do my best to reply in a timely manner.
-									<br>Let’s build something interesting — or at the very least, have a good conversation.
-									</p>						
-									
-								</div>
-								
-								
-								<form action="https://formspree.io/f/xdovdjja" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="email" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<input type="text" name="name" placeholder="Name" required />
+										</div>
+										<div class="col-6 col-12-medium">
+											<input type="email" name="email" placeholder="Email" required />
+										</div>
+										<div class="col-12">
+											<input type="text" name="subject" placeholder="Subject" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+										</div>
+										<div class="col-12">
+											<input type="submit" value="Send Message" />
 										</div>
 									</div>
-								</form>
-							</article>
+								</div>
+							</form>
+						</article>
 
 					</div>
 
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; nilderland, 2025.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Aleyna Nil Uzunoğlu, 2025</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
